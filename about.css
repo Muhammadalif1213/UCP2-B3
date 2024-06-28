@@ -1,0 +1,382 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-icon img {
+    height: 40px;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.header img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.header .paragraph {
+    font-family: "Great Vibes", cursive;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding-left: 20px; /* Optional: Add some padding for better alignment */
+}
+.header .paragraph .p{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.header h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+}
+
+.header p {
+    font-size: 1.2em;
+}
+
+.form-section {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.form-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="email"]:focus,
+.form-section textarea:focus {
+    outline: none;
+    border-color: #333;
+    box-shadow: 0 0 5px rgba(51, 51, 51, 0.5);
+}
+
+.form-section textarea {
+    height: 150px; /* Sesuaikan ketinggian textarea sesuai kebutuhan */
+}
+
+.form-section button {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #555; /* Ubah warna background saat tombol dihover */
+    color: white; /* Sesuaikan warna teks */
+}
+
+
+.text-section {
+    max-width: 45%;
+}
+
+.text-section h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.text-section a {
+    color: #6d4c41;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.text-section a:hover {
+    color: #4e342e;
+}
+
+.text-section a i {
+    margin-right: 10px;
+}
+
+.map-section iframe {
+    border: 0;
+    width: 150%;
+    max-width: 600px;
+    height: 450px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer-left img {
+    margin-left: 30px;
+    height: 100px; /* Sesuaikan tinggi logo sesuai kebutuhan */
+}
+
+.footer-center {
+    flex-grow: 1; /* Membuat bagian tengah memenuhi ruang yang tersedia */
+    text-align: center;
+}
+
+.footer-center a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    margin-right: 30px;
+    text-align: left;
+    gap: 10px;
+}
+
+.footer-right a{
+    text-align: left;
+    color: rgb(236, 232, 230);
+}
+/* Alert Box */
+.alert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* background semi-transparent */
+    z-index: 1000;
+}
+
+.alert-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.alert-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.alert-message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.alert-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alert-button:hover {
+    background-color: #555;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icon-box{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    border: 1px solid #ddd;
+    padding: 0px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.icon-box img {
+    display:flexbox;
+    margin: 0 auto;
+    height: 90px;
+}
+
+.icon-box p{
+    font-size: 16px;
+}
+.judul{
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 200%;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.card p {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.image-overlay-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+    
+}
+
+.image-overlay-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.main-content {
+    width: 65%;
+}
+.sidebar {
+    width: 30%;
+    background: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333; /* Background color for contrast */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap between images */
+}
+
+.col-md-6 {
+    flex: 1 1 45%; /* Adjust width of each column */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-entry {
+    width: 100%;
+    padding-top: 100%; /* Maintain aspect ratio */
+    position: relative;
+}
+
+.menu-entry .img {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

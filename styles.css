@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #efebe9; /* Sesuaikan dengan warna background yang kamu inginkan */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-icon img {
+    height: 40px;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar-links a.active {
+    color: #ff6347; 
+    font-weight: bold; 
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.overlay-content button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #a5750b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.overlay-content a {
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+.overlay-content button:hover {
+    color: black;
+    background-color: #ffffff;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+
+.section img {
+    width: 350px;
+    height: auto;
+    margin-right: 200px;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-family: great vibes;
+    margin-top: 0;
+}
+
+.text-content p {
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.cards-section {
+    text-align: center;
+    width: 100%;
+}
+
+.cards-section h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card p {
+    margin: 10px 0 0;
+}
+
+.image-overlay-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+    
+}
+
+.image-overlay-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.overlay-paragraph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.overlay-paragraph p {
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.overlay-paragraph button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #a5750b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.overlay-paragraph a {
+    color: black;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold; 
+}
+
+
+.overlay-paragraph button:hover {
+    background-color: #fff;
+}
+.footer {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.footer-left img {
+    margin-left: 30px;
+    height: 100px; /* Sesuaikan tinggi logo sesuai kebutuhan */
+}
+
+.footer-center {
+    flex-grow: 1; /* Membuat bagian tengah memenuhi ruang yang tersedia */
+    text-align: center;
+}
+
+.footer-center a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+}
+
+.footer-right {
+    margin-right: 30px;
+    text-align: left;
+    gap: 10px;
+}
+
+.footer-right a{
+    text-align: left;
+    color: rgb(236, 232, 230);
+}
+
+
+.menu-entry {
+    width: 100%;
+    padding-top: 100%; /* Maintain aspect ratio */
+    position: relative;
+}
+
+.menu-entry .img {
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.icon-box{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+    border: 1px solid #ddd;
+    padding: 0px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.icon-box img {
+    display:flexbox;
+    margin: 0 auto;
+    height: 90px;
+}
+
+.icon-box p{
+    font-size: 16px;
+}
+.judul{
+    font-weight: bold;
+}
+
+/* Alert Box */
+.alert-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* background semi-transparent */
+    z-index: 1000;
+}
+
+.alert-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+}
+
+.alert-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.alert-message {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.content {
+    text-align: left;
+    width: 100%;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+.header .paragraph {
+    text-align: left;
+    font-family: "Great Vibes", cursive;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+.header .paragraph h1{
+    margin-left: 100px;
+    font-size: 100px;
+}
+
+.paragraph{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.paragraph h2{
+    font-family: great vibes;
+    font-size: 50px;
+}
+
+.paragraph p{
+    font-family: josefin sans;margin-right: 100px;
+}
+
+.sidebar {
+    width: 30%;
+    background: #eee;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.image-placeholder {
+    background-color: #e0e0e0;
+    height: 100px;
+    width: 100%;
+    border-radius: 8px;
+}
+.row{
+    background-color: #ddd;
+}
+.icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.info-title {
+    font-weight: bold;
+}
+.info-section {
+    margin-bottom: 20px;
+}

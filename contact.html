@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nescafe Coffee</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="alert.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar Sticky -->
+    <nav class="navbar">
+        <div class="navbar-icon">
+            <img src="src/logo.png" alt="Icon">
+        </div>
+        <div class="navbar-center">
+            <div class="navbar-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="header">
+        <img src="https://png.pngtree.com/background/20220718/original/pngtree-real-hd-deep-roasted-coffee-beans-picture-image_1665334.jpg" alt="Background Image">
+        <div class="paragraph">
+            <h1>Kepuasan Pelanggan</h1>
+            <p>Jika anda puas kami senang, dan jika anda tidak puas silahkan hubungi kami pada form dibawah.</p>
+        </div>
+    </div>
+
+    <div class="form-section">
+        <form id="contactForm" onsubmit="event.preventDefault(); handleSubmit();">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="content">
+        <div class="text-section">
+            <h2>Kontak Kami</h2>
+            <p>Hubungi kami melalui:</p>
+            <p><a href="mailto:wseisno37@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Mail</a></p>
+            <p><a href="https://wa.me/+6287870133425" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></p>
+        </div>
+        <div class="map-section">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3711.4152329937237!2d110.3217920908299!3d-7.809965072732708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7af80f28426fb3%3A0x72412294845ee8b4!2sUniversitas%20Muhammadiyah%20Yogyakarta!5e0!3m2!1sid!2sid!4v1719572007787!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <img src="src/logo.png" alt="Company Logo">
+        </div>
+        <div class="footer-center">
+            <a href="index.html">Home</a><br>
+            <a href="about.html">About</a><br>
+            <a href="contact.html">Contact</a><br>
+        </div>
+        <div class="footer-right">
+            
+            <a href="mailto:wseisno37@gmail.com" style="text-decoration: none;">wseisno37@gmail.com</a><br>
+            <a href="https://wa.me/+6287870133425" style="text-decoration: none;">087870133425</a><br>
+
+            <div class="container text-left mt-1">
+                <a href="https://www.instagram.com" class="social-icon"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.facebook.com" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.twitter.com" class="social-icon"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="alert.js"></script>
+</body>
+</html>
